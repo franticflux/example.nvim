@@ -1,1 +1,1 @@
-print("Hell from example!")
+print("Hello from example!")
