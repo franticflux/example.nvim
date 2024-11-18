@@ -5,7 +5,7 @@ function M.setup(opts)
 
    vim.keymap.set("n", "<Leader>9", function()
       if opts.name then
-         print("hello, " .. opts.name)
+         require("M.core").show_popup({"Vajpers"})
       else
          print("Hallo Gabi")
       end
