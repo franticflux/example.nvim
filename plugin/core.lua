@@ -2,8 +2,6 @@ local core = {}
 
 function core.show_popup(lines)
 	local buf = vim.api.nvim_create_buf(false, true) -- Create a scratch buffer
-	-- Set the content of the popup
-	--local lines = { "Hello, Neovim!", "This is a simple popup." }
 	vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
 
 	-- Configure popup window options
